@@ -13,10 +13,7 @@ public final class SieveCache<Key: Hashable, Value> {
     }
     
     public func value(forKey key: Key) -> Value? {
-        guard cache[key] != nil else { return nil }
-
-        // Cache hit
-        return access(key: key)
+        access(key: key)
     }
     
     public func setValue(_ value: Value?, forKey key: Key) {
