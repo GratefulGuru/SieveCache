@@ -118,15 +118,4 @@ public final class SieveCache<Key: Hashable, Value> {
     
     // The number of objects currently in the cache
     var count: Int { cache.count }
-    
-    var status: String {
-        var s = ""
-        var current = head
-        while current != nil {
-            s += "\(current!.key) (Visited: \(current!.visited))"
-            s += current!.next != nil ? " -> " :  "\n"
-            current = current!.next
-        }
-        return s
-    }
 }
