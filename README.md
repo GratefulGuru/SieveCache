@@ -1,8 +1,8 @@
-[![codecov](https://codecov.io/gh/GratefulGuru/SieveCache/graph/badge.svg?token=TDQ6YQUGAP)](https://codecov.io/gh/GratefulGuru/SieveCache)
-[![Platforms](https://img.shields.io/badge/platforms-iOS%20|%20Mac%20|%20tvOS-lightgray.svg)]()
-[![Swift 5.9](https://img.shields.io/badge/swift-5.9-red.svg?style=flat)](https://developer.apple.com/swift)
-[![License](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://opensource.org/licenses/MIT)
 [![Swift](https://github.com/GratefulGuru/SieveCache/actions/workflows/swift.yml/badge.svg)](https://github.com/GratefulGuru/SieveCache/actions/workflows/swift.yml)
+[![codecov](https://codecov.io/gh/GratefulGuru/SieveCache/graph/badge.svg?token=TDQ6YQUGAP)](https://codecov.io/gh/GratefulGuru/SieveCache)
+[![Swift 5.9](https://img.shields.io/badge/Swift-5.9-red.svg?style=flat)](https://developer.apple.com/swift)
+[![Platforms](https://img.shields.io/badge/Platforms-iOS%20|%20Mac%20|%20tvOS-blue.svg)]()
+[![License](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://opensource.org/licenses/MIT)
 
 
 - [Introduction](#introduction)
