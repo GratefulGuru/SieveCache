@@ -6,16 +6,16 @@
 //
 
 import XCTest
-@testable import SIEVE_cache
+@testable import SieveCache
 
-final class SIEVEPerformanceTests: XCTestCase {
-    let iterations = 10000
+final class SievePerformanceTests: XCTestCase {
+    let iterations = 10_000
     
     func testInsertionPerformance() throws {
         measure {
             let cache = SieveCache<Int, Int>()
             for i in 0 ..< iterations {
-                cache.setValue(i, forKey: i)
+                cache.setObject(i, forKey: i)
             }
         }
     }
@@ -23,11 +23,11 @@ final class SIEVEPerformanceTests: XCTestCase {
     func testLookupPerformance() {
         let cache = SieveCache<Int, Int>()
         for i in 0 ..< iterations {
-            cache.setValue(i, forKey: i)
+            cache.setObject(i, forKey: i)
         }
         measure {
             for i in 0 ..< iterations {
-                _ = cache.value(forKey: i)
+                _ = cache.object(forKey: i)
             }
         }
     }
@@ -35,20 +35,20 @@ final class SIEVEPerformanceTests: XCTestCase {
     func testRemovalPerformance() {
         let cache = SieveCache<Int, Int>()
         for i in 0 ..< iterations {
-            cache.setValue(i, forKey: i)
+            cache.setObject(i, forKey: i)
         }
         measure {
             for i in 0 ..< iterations {
-                _ = cache.removeValue(forKey: i)
+                _ = cache.removeObject(forKey: i)
             }
         }
     }
 
     func testOverflowInsertionPerformance() {
         measure {
-            let cache = SieveCache<Int, Int>(capacity: iterations/10)
+            let cache = SieveCache<Int, Int>(countLimit: iterations/10)
             for i in 0 ..< iterations {
-                cache.setValue(i, forKey: i)
+                cache.setObject(i, forKey: i)
             }
         }
     }

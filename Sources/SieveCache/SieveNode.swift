@@ -1,6 +1,6 @@
 import Foundation
 
-class SieveNode<Key, Value> {
+final class SieveNode<Key, Value> {
     let key: Key
     let value: Value
     var visited = false
