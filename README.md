@@ -1,8 +1,8 @@
-[![Codecov](https://codecov.io/gh/nicklockwood/LRUCache/graphs/badge.svg)](https://codecov.io/gh/nicklockwood/LRUCache)
-[![Platforms](https://img.shields.io/badge/platforms-iOS%20|%20Mac%20|%20tvOS%20|%20watchOS%20|%20Linux-lightgray.svg)]()
-[![Swift 5.1](https://img.shields.io/badge/swift-5.1-red.svg?style=flat)](https://developer.apple.com/swift)
+[![codecov](https://codecov.io/gh/GratefulGuru/SieveCache/graph/badge.svg?token=TDQ6YQUGAP)](https://codecov.io/gh/GratefulGuru/SieveCache)
+[![Platforms](https://img.shields.io/badge/platforms-iOS%20|%20Mac%20|%20tvOS-lightgray.svg)]()
+[![Swift 5.9](https://img.shields.io/badge/swift-5.9-red.svg?style=flat)](https://developer.apple.com/swift)
 [![License](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://opensource.org/licenses/MIT)
-[![Twitter](https://img.shields.io/badge/twitter-@nicklockwood-blue.svg)](http://twitter.com/nicklockwood)
+
 
 - [Introduction](#introduction)
 - [Installation](#installation)
@@ -20,7 +20,7 @@
 
 SieveCache is distributed as a Swift Package that you can import into your Xcode project or other Swift based code base.
 
-**Note:** SieveCache requires Xcode 15+ to build, and runs on iOS 13+ and macOS 12+. It __may__ 
+**Note:** SieveCache requires Xcode 15+ to build, and runs on iOS 13+ and macOS 12+. _It should work<sup>TM</sup>_ on other platforms but has not been tested. Do let me know if you can verify success on other platforms.
 
 To install using Swift Package Manager, add this to the `dependencies:` section in your Package.swift file:
 
