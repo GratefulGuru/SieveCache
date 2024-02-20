@@ -2,6 +2,7 @@
 [![Platforms](https://img.shields.io/badge/platforms-iOS%20|%20Mac%20|%20tvOS-lightgray.svg)]()
 [![Swift 5.9](https://img.shields.io/badge/swift-5.9-red.svg?style=flat)](https://developer.apple.com/swift)
 [![License](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://opensource.org/licenses/MIT)
+[![Swift](https://github.com/GratefulGuru/SieveCache/actions/workflows/swift.yml/badge.svg)](https://github.com/GratefulGuru/SieveCache/actions/workflows/swift.yml)
 
 
 - [Introduction](#introduction)
