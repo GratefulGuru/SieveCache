@@ -25,7 +25,8 @@ jobs:
       run: swift test -v --enable-code-coverage
     - name: Upload coverage reports to Codecov
       uses: codecov/codecov-action@v4.0.1
-      env:
-        CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
+      with:
+        fail_ci_if_error: true
+        files: .build/arm64-apple-macosx/debug/codecov/SieveCache.json
         token: ${{ secrets.CODECOV_TOKEN }}
         slug: GratefulGuru/SieveCache
