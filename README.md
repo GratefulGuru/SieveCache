@@ -21,7 +21,7 @@
 
 SieveCache is distributed as a Swift Package that you can import into your Xcode project or other Swift based code base.
 
-**Note:** SieveCache requires Xcode 15+ to build, and runs on iOS 13+ and macOS 12+. _It should work<sup>TM</sup>_ on other platforms but has not been tested. Do let me know if you can verify success on other platforms.
+**Note:** SieveCache requires Swift 5.9 (so Xcode 15+) to build, and runs on iOS 13+ and macOS 12+. _It should work<sup>TM</sup>_ on other platforms but has not been tested. Do let me know if you can verify success on other platforms.
 
 To install using Swift Package Manager, add this to the `dependencies:` section in your Package.swift file:
 
@@ -38,7 +38,7 @@ You can create an instance of **SieveCache** as follows:
 let cache = SieveCache<String, Int>()
 ```
 
-This would create a cache of unlimited size, containing `Int` values keyed by `String`. To add an object to the cache, use:
+This would create a cache of default size (1000 objects), containing `Int` values keyed by `String`. To add an object to the cache, use:
 
 ```swift
 cache.setObject(99, forKey: "foo")

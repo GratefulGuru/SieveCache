@@ -1,14 +1,14 @@
 import Foundation
 
-final class SieveNode<Key, Value> {
-    let key: Key
-    let value: Value
+final class SieveNode<KeyType, ObjectType> {
+    let key: KeyType
+    let object: ObjectType
     var visited = false
     var previous: SieveNode?
     var next: SieveNode?
     
-    init(key: Key, value: Value) {
+    init(key: KeyType, object: ObjectType) {
         self.key = key
-        self.value = value
+        self.object = object
     }
 }
